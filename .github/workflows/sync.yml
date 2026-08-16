@@ -24,6 +24,12 @@ jobs:
             echo "::error::owner archive reference found in the public mirror — refusing to sync"; exit 1
           fi
       - run: node sync.mjs
+      # Glama 收录探针:会话沙箱够不到 glama.ai(出网代理 403),runner 可以。
+      # 结果写回仓库,会话读 git 即知审核状态——不需要任何人去后台看。
+      # 本仓公开,Actions 免费,该步骤月成本 0。
+      - name: Check Glama listing status
+        run: node check-glama.mjs
+        continue-on-error: true
       - name: Commit if changed
         run: |
           git config user.name 'Claude'

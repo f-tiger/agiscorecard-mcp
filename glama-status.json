@@ -1,0 +1,21 @@
+{
+  "checked": "2026-08-16T06:41Z",
+  "servers": [
+    {
+      "name": "verified-ai-free-tiers",
+      "path": "f-tiger/verified-ai-free-tiers",
+      "url": "https://glama.ai/mcp/servers/f-tiger/verified-ai-free-tiers/badges/score.svg",
+      "http": 403,
+      "scored": false,
+      "bytes": 0
+    },
+    {
+      "name": "agiscorecard-mcp",
+      "path": "f-tiger/agiscorecard-mcp",
+      "url": "https://glama.ai/mcp/servers/f-tiger/agiscorecard-mcp/badges/score.svg",
+      "http": 403,
+      "scored": false,
+      "bytes": 0
+    }
+  ]
+}
