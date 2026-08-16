@@ -1,0 +1,33 @@
+name: Daily sync from agiscorecard.com
+on:
+  schedule:
+    - cron: '30 23 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      # 隐私闸门(owner 2026-08-16:「我个人数字人的部分不公开」):这个镜像仓永远
+      # 只放判定数据集与 MCP 清单。owner-identity / owner-trajectory 一类档案存在
+      # 私有主仓与 D1,任何一份出现在这里都必须让流水线红掉,而不是悄悄发出去。
+      - name: Privacy gate — no owner archive may ever land here
+        run: |
+          if ls owner-* 2>/dev/null | grep -q .; then
+            echo "::error::owner-* file present in the public mirror — refusing to sync"; exit 1
+          fi
+          if grep -rIl -e 'owner-identity' -e 'owner-trajectory' . --exclude-dir=.git --exclude-dir=.github 2>/dev/null | grep -q .; then
+            echo "::error::owner archive reference found in the public mirror — refusing to sync"; exit 1
+          fi
+      - run: node sync.mjs
+      - name: Commit if changed
+        run: |
+          git config user.name 'Claude'
+          git config user.email 'noreply@anthropic.com'
+          git add -A
+          git diff --cached --quiet || git commit -m 'chore: daily sync from agiscorecard.com'
+          git push
