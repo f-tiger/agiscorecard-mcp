@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this dataset, cite it as below (CC BY 4.0 — attribution with a link to agiscorecard.com satisfies the license)."
+title: "The AGI Scorecard: Situational Awareness predictions, graded"
+type: dataset
+authors:
+  - name: "The AGI Scorecard"
+    website: "https://agiscorecard.com"
+repository-code: "https://github.com/f-tiger/agiscorecard-mcp"
+url: "https://agiscorecard.com/data.json"
+license: CC-BY-4.0
+abstract: >-
+  Every prediction in Leopold Aschenbrenner's "Situational Awareness" (June 2024),
+  graded against public evidence with pre-registered flip conditions, plus the
+  AGI-2027 Thesis Tracker — one auditable 0-100 score recomputed from the verdicts.
+  This repository mirrors the live dataset; the source of truth is agiscorecard.com.
+  The dataset is living: cite the URL together with the dateModified field of the
+  copy you used (no DOI is registered).
