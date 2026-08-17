@@ -4,7 +4,7 @@
   "url": "https://agiscorecard.com/",
   "dataUrl": "https://agiscorecard.com/data.json",
   "license": "CC BY 4.0 — reuse freely with attribution and a link to https://agiscorecard.com",
-  "dateModified": "2026-08-08",
+  "dateModified": "2026-08-17",
   "summary": {
     "on_track": 3,
     "wrong": 1,
@@ -132,39 +132,120 @@
   "forecaster_timelines": [
     {
       "name": "Elon Musk",
-      "position": "AGI by end of 2026"
+      "position": "AGI by end of 2026",
+      "status": "Open",
+      "deadline": "2026-12-31",
+      "verdict_note": "Open, 136 days to deadline as of 2026-08-17. The 'probably next year' (2025) half of his April 2024 statement has already lapsed with no AGI announced; the end-of-2026 half is the boldest live deadline on this board.",
+      "source": {
+        "title": "X Spaces interview with Nicolai Tangen (Norges Bank CEO), quoted: “If you define AGI as smarter than the smartest human, I think it's probably next year, within two years”",
+        "url": "https://www.scmp.com/tech/tech-trends/article/3258309/teslas-musk-predicts-ai-will-be-smarter-smartest-human-next-year",
+        "date": "2024-04-08"
+      },
+      "checked": "2026-08-17"
     },
     {
       "name": "Dario Amodei",
-      "position": "\"Powerful AI\" possibly 2026-27"
+      "position": "\"Powerful AI\" possibly 2026-27",
+      "status": "No hard deadline",
+      "deadline": null,
+      "verdict_note": "Not resolvable as stated: 'could come as early as 2026' is a floor with explicit uncertainty, not a dated bet. As of 2026-08-17 neither confirmed nor falsified.",
+      "source": {
+        "title": "Machines of Loving Grace (his own essay: powerful AI “could come as early as 2026”)",
+        "url": "https://darioamodei.com/essay/machines-of-loving-grace",
+        "date": "2024-10"
+      },
+      "checked": "2026-08-17"
     },
     {
       "name": "Leopold Aschenbrenner",
-      "position": "AGI 2027"
+      "position": "AGI 2027",
+      "status": "Open",
+      "deadline": "2028-01-01",
+      "verdict_note": "Open — the prediction this site grades line by line. Thesis Tracker 62.5/100, unchanged from 2026-06-30 through 2026-08-17; the defining milestone (AI autonomously doing AI research) is undemonstrated.",
+      "source": {
+        "title": "Situational Awareness (June 2024)",
+        "url": "https://situational-awareness.ai",
+        "date": "2024-06"
+      },
+      "checked": "2026-08-17"
     },
     {
       "name": "Sam Altman",
-      "position": "Near-term; superintelligence \"a few thousand days\""
+      "position": "Near-term; superintelligence \"a few thousand days\"",
+      "status": "No hard deadline",
+      "deadline": null,
+      "verdict_note": "Not falsifiable before roughly 2030: 'a few thousand days' (Sep 2024) spans ≈ 2030–2035 depending on reading, and he attached no date to AGI itself.",
+      "source": {
+        "title": "The Intelligence Age (“It is possible that we will have superintelligence in a few thousand days”)",
+        "url": "https://ia.samaltman.com/",
+        "date": "2024-09-23"
+      },
+      "checked": "2026-08-17"
     },
     {
       "name": "Demis Hassabis",
-      "position": "~50% by 2030"
+      "position": "~50% by 2030",
+      "status": "Not yet due",
+      "deadline": "2030-12-31",
+      "verdict_note": "Not yet due; probabilistic (~50%), so 2031 without AGI would not strictly falsify it. As of mid-2026 the evidence (strong task capability, unproven autonomy) sits inside his window.",
+      "source": {
+        "title": "Lex Fridman Podcast conversation (“Timeline for AGI: 2030 with 50% chance”)",
+        "url": "https://www.youtube.com/watch?v=T9Knc3Mdcec",
+        "date": "2025"
+      },
+      "checked": "2026-08-17"
     },
     {
       "name": "Samotsvety",
-      "position": "~28% by 2030"
+      "position": "~28% by 2030",
+      "status": "Not yet due",
+      "deadline": "2030-12-31",
+      "verdict_note": "Not yet due; at ~28% it is closer to a bearish call — no AGI by 2030 would be their majority outcome. January 2026 update; their earlier 2023 aggregate was ~25% by 2029.",
+      "source": {
+        "title": "Samotsvety Forecasting — AGI timelines updates (January 2026 aggregate, eight forecasters)",
+        "url": "https://samotsvety.org/blog/",
+        "date": "2026-01"
+      },
+      "checked": "2026-08-17"
     },
     {
       "name": "Metaculus community",
-      "position": "25% by 2029; 50% by 2033"
+      "position": "25% by 2029; 50% by 2033",
+      "status": "Not yet due",
+      "deadline": null,
+      "verdict_note": "A live-updating community aggregate, not a fixed bet; mid-2026 readings on the general-AI question sit near late 2032–2033. Recorded here as the 2026 snapshot.",
+      "source": {
+        "title": "Metaculus: When will the first general AI system be devised, tested, and publicly announced?",
+        "url": "https://www.metaculus.com/questions/5121/date-of-artificial-general-intelligence/",
+        "date": "live"
+      },
+      "checked": "2026-08-17"
     },
     {
       "name": "Andrej Karpathy",
-      "position": "About a decade out"
+      "position": "About a decade out",
+      "status": "Not yet due",
+      "deadline": null,
+      "verdict_note": "Not yet due; 'a decade away' said October 2025 implies roughly 2035 — the farthest-out personal call on this board.",
+      "source": {
+        "title": "Dwarkesh Podcast: “AGI is still a decade away”",
+        "url": "https://www.dwarkesh.com/p/andrej-karpathy",
+        "date": "2025-10-17"
+      },
+      "checked": "2026-08-17"
     },
     {
       "name": "AI researcher survey (n=2778)",
-      "position": "50% by 2040"
+      "position": "50% by 2047 (HLMI)",
+      "status": "Not yet due",
+      "deadline": null,
+      "verdict_note": "Not yet due; the aggregate 2023 forecast gives a 50% chance of high-level machine intelligence by 2047, down 13 years from 2060 in the 2022 survey. Correction on record 2026-08-17: this dataset previously listed 2040; the paper's aggregate is 2047.",
+      "source": {
+        "title": "Grace et al., Thousands of AI Authors on the Future of AI (2,778 respondents, fielded Oct 2023)",
+        "url": "https://arxiv.org/abs/2401.02843",
+        "date": "2024-01"
+      },
+      "checked": "2026-08-17"
     }
   ],
   "thesisTracker": {

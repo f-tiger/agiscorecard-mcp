@@ -6,7 +6,7 @@ for the whole 2027 bet. Listed in the official
 [MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=agiscorecard)
 as `com.agiscorecard/agi-scorecard`.
 
-**Thesis Tracker: <!-- score -->62.5<!-- /score -->/100** · verdicts as of <!-- asof -->2026-08-08<!-- /asof -->
+**Thesis Tracker: <!-- score -->62.5<!-- /score -->/100** · verdicts as of <!-- asof -->2026-08-17<!-- /asof -->
 
 This repository is a **mirror**. The single source of truth is
 [agiscorecard.com](https://agiscorecard.com) — nothing here is hand-written; `sync.mjs`
