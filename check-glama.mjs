@@ -14,6 +14,8 @@ import { writeFileSync, readFileSync, existsSync } from 'node:fs';
 const SERVERS = [
   { key: 'verified-ai-free-tiers', paths: ['f-tiger/verified-ai-free-tiers', '@f-tiger/verified-ai-free-tiers'] },
   { key: 'agiscorecard-mcp',       paths: ['f-tiger/agiscorecard-mcp',       '@f-tiger/agiscorecard-mcp'] },
+  // 2026-08-20 加入:awesome-mcp-servers PR #12245 的验收同样卡这张 svg。
+  { key: 'getecoback-mcp',         paths: ['f-tiger/getecoback-mcp',         '@f-tiger/getecoback-mcp'] },
 ];
 
 async function probe(path) {
