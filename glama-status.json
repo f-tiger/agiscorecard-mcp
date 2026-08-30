@@ -1,5 +1,5 @@
 {
-  "checked": "2026-08-29T04:16Z",
+  "checked": "2026-08-30T01:30Z",
   "servers": [
     {
       "name": "verified-ai-free-tiers",
@@ -23,7 +23,7 @@
       "url": "https://glama.ai/mcp/servers/f-tiger/getecoback-mcp/badges/score.svg",
       "http": 200,
       "scored": true,
-      "bytes": 4189
+      "bytes": 4174
     }
   ]
 }
