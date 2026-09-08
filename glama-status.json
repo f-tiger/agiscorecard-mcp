@@ -1,5 +1,5 @@
 {
-  "checked": "2026-09-07T01:13Z",
+  "checked": "2026-09-08T01:19Z",
   "servers": [
     {
       "name": "verified-ai-free-tiers",
@@ -7,7 +7,7 @@
       "url": "https://glama.ai/mcp/servers/f-tiger/verified-ai-free-tiers/badges/score.svg",
       "http": 200,
       "scored": true,
-      "bytes": 4189
+      "bytes": 4492
     },
     {
       "name": "agiscorecard-mcp",
@@ -15,7 +15,7 @@
       "url": "https://glama.ai/mcp/servers/f-tiger/agiscorecard-mcp/badges/score.svg",
       "http": 200,
       "scored": true,
-      "bytes": 4189
+      "bytes": 4476
     },
     {
       "name": "getecoback-mcp",
@@ -23,7 +23,7 @@
       "url": "https://glama.ai/mcp/servers/f-tiger/getecoback-mcp/badges/score.svg",
       "http": 200,
       "scored": true,
-      "bytes": 4174
+      "bytes": 4346
     }
   ]
 }
