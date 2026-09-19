@@ -93,10 +93,25 @@ collection of local worksheets for AI and Web3 operational review:
 - [Protocol Ledger: methods and API](https://protocol.agiscorecard.com/guide.html)
   — read dated protocol profiles with official sources and explicit scope limits.
 
-These are separate browser tools, not additional methods of this MCP server.
-Inputs are processed locally; example results are fictional. No wallet connection,
+These tools use a separate service from the dataset MCP above. Browser worksheet
+inputs are processed locally; example results are fictional. No wallet connection,
 model call, production routing or security certification is provided. See each
 tool's method, limits and separate software license.
+
+### Web3 Workbench MCP
+
+Connect to `https://web3.agiscorecard.com/mcp` using Streamable HTTP, without an
+API key. [Setup and available tools](https://web3.agiscorecard.com/for-agents.html).
+
+The endpoint exposes ten deterministic calculators plus `search` and `fetch` for
+public methods. Results include a canonical method citation, release version,
+sources and limitations. Each tool subdomain also provides a scoped `/mcp` endpoint.
+These are independent of the four dataset tools and registry identity above.
+
+Remote MCP calls send the selected arguments to the server; application code does
+not persist inputs or results. Client and hosting-provider policies are separate.
+Public citations describe the method, not an independently verified private result.
+Connecting a client does not imply automatic inclusion in AI search or a registry.
 
 ## Licence
 
