@@ -9,8 +9,8 @@ as `com.agiscorecard/agi-scorecard`.
 **Thesis Tracker: <!-- score -->62.5<!-- /score -->/100** · verdicts as of <!-- asof -->2026-09-06<!-- /asof -->
 
 This repository is a **mirror**. The single source of truth is
-[agiscorecard.com](https://agiscorecard.com) — nothing here is hand-written; `sync.mjs`
-rebuilds the tables from the live dataset every day.
+[agiscorecard.com](https://agiscorecard.com). `sync.mjs` rebuilds the dataset tables
+from the live source every day; the integration notes and related resources below are curated.
 
 ## MCP server (connect an agent directly)
 
@@ -80,6 +80,23 @@ No auth, no install, streamable HTTP. Setup notes: <https://agiscorecard.com/for
 Also served live: [`/llms.txt`](https://agiscorecard.com/llms.txt) ·
 [`/data.json`](https://agiscorecard.com/data.json) ·
 [`/index-history.json`](https://agiscorecard.com/index-history.json)
+
+## Related local review tools
+
+The same team maintains [Web3 Workbench](https://web3.agiscorecard.com/), a free
+collection of local worksheets for AI and Web3 operational review:
+
+- [Agent Evidence: worked scenarios](https://evidence.agiscorecard.com/examples.html)
+  — inspect deduplicated task evidence, version boundaries and conflicting reviews.
+- [Route Lab: worked scenarios](https://route.agiscorecard.com/examples.html)
+  — compare a fallback's expected cost with its worst-case budget and latency.
+- [Protocol Ledger: methods and API](https://protocol.agiscorecard.com/guide.html)
+  — read dated protocol profiles with official sources and explicit scope limits.
+
+These are separate browser tools, not additional methods of this MCP server.
+Inputs are processed locally; example results are fictional. No wallet connection,
+model call, production routing or security certification is provided. See each
+tool's method, limits and separate software license.
 
 ## Licence
 
