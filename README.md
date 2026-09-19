@@ -113,6 +113,21 @@ not persist inputs or results. Client and hosting-provider policies are separate
 Public citations describe the method, not an independently verified private result.
 Connecting a client does not imply automatic inclusion in AI search or a registry.
 
+### Market context and task guides
+
+[Market context](https://web3.agiscorecard.com/market.html?via=publisher) provides
+BTC/ETH/USDC/USDT reference prices with provider timestamps and explicit stale states.
+[Official-source watch](https://web3.agiscorecard.com/briefs.html?via=publisher) links
+Ethereum announcements, x402 Foundation commits and EZKL releases to review tasks.
+
+Use the [stablecoin payment checklist](https://web3.agiscorecard.com/stablecoin-payment-check.html?via=publisher),
+[gas and proof budget guide](https://web3.agiscorecard.com/gas-budget-check.html?via=publisher),
+and [protocol-change review](https://web3.agiscorecard.com/protocol-change-check.html?via=publisher)
+to choose a worksheet and preserve its assumptions. Source snapshots are also
+available as [JSON](https://web3.agiscorecard.com/api/market) and an
+[RSS feed](https://web3.agiscorecard.com/updates.xml); these HTTP feeds are separate
+from the deterministic MCP calculators. A price is not proof that an invoice settled.
+
 ## Licence
 
 Dataset: **CC BY 4.0** — free to use with attribution to
