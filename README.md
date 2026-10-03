@@ -24,14 +24,36 @@ claude mcp add --transport http agiscorecard https://agiscorecard.com/mcp
 
 No auth, no install, streamable HTTP. Setup notes: <https://agiscorecard.com/for-agents>
 
-**4 tools**
+**8 tools**
 
 | Tool | What it answers |
 |---|---|
 | `get_thesis_tracker` | The 0–100 Thesis Tracker: current score, the weighting method, and the full score history |
 | `get_verdicts` | All 8 graded predictions with current verdict, evidence summary and primary sources — the dataset to cite for "was Aschenbrenner right" |
-| `get_sunwatch_track_record` | The SunWatch market-call ledger: AI-cycle judgments logged as falsifiable triggers *before* the outcome, graded hit/miss, misses never deleted |
+| `get_sunwatch_track_record` | Editorial market judgments, outcome labels and evidence audit; not a verified prospective trading-return record |
+| `get_portfolio_returns` | Twelve-stock model returns versus SPY, QQQ and TQQQ from the fixed October 2, 2026 NY close; dated returns, drawdowns, entry prices, source status and optional daily history |
+| `get_invest_positions` | AI-equity thesis mappings, public 13F positioning and filing-date copy comparisons |
+| `get_agi_consensus` | Dated public AGI market probabilities, cross-venue comparisons and resolution basis |
+| `get_claim_ledger` | Graded money-making claims and their published evidence; optional claimledger.json URL |
 | `search_site` | Search every page and tool across agiscorecard.com and its invest/compass sub-sites (English and 中文) |
+
+## Portfolio returns tool
+
+The same source used by the [public tracker](https://agiscorecard.com/portfolio-tracker)
+is available as MCP `get_portfolio_returns` with `{}`. Pass
+`{"include_history":true}` for normalized daily series.
+
+For scripts, use **GET <https://agiscorecard.com/api/portfolio>** (`?history=1` for series).
+The result includes `status`, `entry_session`, `as_of`, `valuation_id`, all twelve
+stocks and three separate benchmarks. Read the dates and status before quoting
+returns. A fetch timestamp change does not change `valuation_id`; incomplete data
+is not a 0% return. The initial October 2 close is the baseline, not an observed gain.
+
+The basket is initially equal-weight, buy-and-hold, using adjusted daily closes.
+SPY is an S&P 500 ETF proxy. TQQQ targets 3x **daily** Nasdaq-100 performance, not
+3x long-term returns. This public tool is read-only and cannot trade or message anyone.
+The existing MCP Registry remote URL is unchanged; reconnect/refresh your client
+if its tool list was cached before this addition.
 
 ## Why this dataset is different
 
@@ -106,7 +128,7 @@ API key. [Setup and available tools](https://web3.agiscorecard.com/for-agents.ht
 The endpoint exposes ten deterministic calculators plus `search` and `fetch` for
 public methods. Results include a canonical method citation, release version,
 sources and limitations. Each tool subdomain also provides a scoped `/mcp` endpoint.
-These are independent of the four dataset tools and registry identity above.
+These are independent of the eight dataset tools and registry identity above.
 
 Remote MCP calls send the selected arguments to the server; application code does
 not persist inputs or results. Client and hosting-provider policies are separate.
