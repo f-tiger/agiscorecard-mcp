@@ -1,5 +1,5 @@
 {
-  "checked": "2026-10-31T02:38Z",
+  "checked": "2026-11-01T02:28Z",
   "servers": [
     {
       "name": "verified-ai-free-tiers",
@@ -13,9 +13,9 @@
       "name": "agiscorecard-mcp",
       "path": "f-tiger/agiscorecard-mcp",
       "url": "https://glama.ai/mcp/servers/f-tiger/agiscorecard-mcp/badges/score.svg",
-      "http": 200,
-      "scored": true,
-      "bytes": 3861
+      "http": 0,
+      "scored": false,
+      "error": "The operation was aborted due to timeout"
     },
     {
       "name": "getecoback-mcp",
